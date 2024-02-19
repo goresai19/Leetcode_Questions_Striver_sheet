@@ -4,10 +4,11 @@ public:
         int i=0,j=numbers.size()-1;
         vector<int> ans;
         while(i<j){
-            if(numbers[i]+numbers[j]>target){
+             int c=numbers[i]+numbers[j];
+            if(c>target){
                 j--; 
             }
-            else if(numbers[i]+numbers[j]<target){
+            else if(c<target){
                 i++;
             }
             else{
