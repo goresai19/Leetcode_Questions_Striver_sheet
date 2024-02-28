@@ -12,7 +12,6 @@ class Solution {
 public:
     int numComponents(ListNode* head, vector<int>& nums) {
         int ans=0,n=nums.size();
-        sort(nums.begin(),nums.end());
         int i=0;
         ListNode* temp=head;
         set<int> s(nums.begin(),nums.end());
