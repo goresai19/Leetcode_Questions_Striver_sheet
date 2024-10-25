@@ -3,7 +3,7 @@ class Solution {
 public:
     long long getOperation(long long n){
         if(n==1){
-            return 1;
+            return 0;
         }
         while(n!=1){
             if(n%2==0){
@@ -21,6 +21,6 @@ public:
         
         count+=getOperation(n);
 
-        return count-1;
+        return count;
     }
 };
